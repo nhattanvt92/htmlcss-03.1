@@ -8,10 +8,90 @@
 } */
 
 html {
+    font-family: "Sora", sans-serif;
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
-    font-family: "Sora", sans-serif;
+    background-color: #565656;
+}
+
+/* common */
+.main-content {
+    margin: 0 auto;
+    width: 1440px;
+    max-width: calc(100% - 42px);
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    min-width: 205px;
+    border-radius: 22px;
+    background: #2e80ce;
+    padding: 22px 15px;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+/* --------- header ----------- */
+header {
+    padding: 30px 0 110px;
+    background: #10375c;
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item a,
+.navbar__cta .btn-login {
+    padding: 5px 21px;
+    color: #c9d2da;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.navbar__item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__item.active a {
+    font-weight: 400;
+    color: #fff;
+}
+
+.navbar__item.active::before {
+    display: inline-block;
+    content: "";
+    background-color: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: -13px;
+}
+
+.navbar__cta {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__cta .btn-login {
+    text-align: center;
+    min-width: 106px;
+    font-size: 1.6rem;
+    padding: 14px 28px;
+}
+
+.navbar__cta .btn-signup {
+    min-width: 104px;
+    padding: 14px 15px;
 }
