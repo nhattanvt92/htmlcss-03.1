@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* :root {
+    --primary:;
+} */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora", sans-serif;
+}
