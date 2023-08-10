@@ -400,9 +400,6 @@ body {
     text-align: center;
 }
 
-.member__header {
-}
-
 .member__header .btn {
     margin-top: 20px;
 }
@@ -414,10 +411,6 @@ body {
     column-gap: 30px;
     margin-top: 70px;
     overflow: hidden;
-}
-
-.member-item {
-    /* width: calc(25% - 22.5px); */
 }
 
 .member-item__img-bg {
@@ -576,14 +569,14 @@ body {
     color: #10375c;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 1.63; /* 162.5% */
+    line-height: 1.63;
 }
 
 .news-item__desc {
     color: #575f66;
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 1.71; /* 171.429% */
+    line-height: 1.71;
     margin: 10px 0 12px;
 }
 
@@ -597,7 +590,7 @@ body {
     color: #2e80ce;
 }
 
-/*  ---------- CTA -----------  */
+/*  ---------- Appointment -----------  */
 
 .Appointment {
     padding: 100px 0;
@@ -633,4 +626,186 @@ body {
 .Appointment__btn {
     margin-top: 38px;
     border-radius: 30px;
+}
+
+/* --------- footer --------- */
+
+.footer {
+    padding: 100px 0 42px;
+    background: #10375c;
+}
+
+.footer__column:first-child {
+    width: 28.7%;
+}
+
+.footer__row {
+    display: flex;
+    column-gap: 78px;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.logo__circle {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #2e80ce;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border-radius: 50%;
+    bottom: 3px;
+    right: 3px;
+}
+
+.logo__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo__brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 0.77;
+}
+
+.logo__brand--small {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 14px;
+}
+
+.footer__desc {
+    color: #a9b3bb;
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    margin-top: 21px;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer__column:nth-child(2) .footer__list:last-child {
+    row-gap: 12px;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+    margin-bottom: 20px;
+}
+
+.footer__title ~ .footer__title {
+    margin-top: 28px;
+}
+
+.footer__link {
+    color: #a9b3bb;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
+
+.footer__column:last-child {
+    width: 28%;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+}
+
+.footer__social-btn {
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #2e80ce;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    background: #2e80ce;
+    color: #fff;
+}
+
+.footer__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 12px;
+    margin-top: 10px;
+}
+
+.footer__input__box {
+    flex-grow: 1;
+    height: 46px;
+    background-color: transparent;
+    color: #9ca8b1;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+    border: 1px solid #406181;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.footer__input__box::placeholder {
+    color: #9ca8b1;
+}
+
+.footer__btn {
+    min-width: 108px;
+    padding: 0 6px;
+    border-radius: 4px;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 3.289;
+}
+
+.footer__line {
+    display: block;
+    background: #406181;
+    height: 1px;
+    margin: 28px 0;
+}
+
+.copyright__desc {
+    color: #aab3ba;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
 }
