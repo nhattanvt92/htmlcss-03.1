@@ -9,12 +9,12 @@
 
 html {
     font-family: "Sora", sans-serif;
+    text-decoration: none;
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
-    /* background-color: #565656; */
 }
 
 /* common */
@@ -94,7 +94,7 @@ body {
     background: var(--primary-color);
     position: sticky;
     top: -20px;
-    z-index: 2;
+    z-index: 9999;
 }
 
 .header__navbar {
@@ -631,8 +631,10 @@ body {
 /* --------- footer --------- */
 
 .footer {
+    margin-top: 170px;
     padding: 100px 0 42px;
     background: #10375c;
+    font-family: Open Sans;
 }
 
 .footer__column:first-child {
@@ -693,7 +695,6 @@ body {
 
 .footer__desc {
     color: #a9b3bb;
-    font-family: Open Sans;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -712,7 +713,6 @@ body {
 
 .footer__title {
     color: #fff;
-    font-family: Open Sans;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
@@ -725,10 +725,13 @@ body {
 
 .footer__link {
     color: #a9b3bb;
-    font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: 1.85; /* 185.714% */
+    line-height: 1.85;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
 
 .footer__column:last-child {
@@ -770,7 +773,6 @@ body {
     height: 46px;
     background-color: transparent;
     color: #9ca8b1;
-    font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85; /* 185.714% */
@@ -788,7 +790,6 @@ body {
     min-width: 108px;
     padding: 0 6px;
     border-radius: 4px;
-    font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 3.289;
@@ -804,7 +805,6 @@ body {
 .copyright__desc {
     color: #aab3ba;
     text-align: center;
-    font-family: Open Sans;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
